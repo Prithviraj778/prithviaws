@@ -1,6 +1,7 @@
 from sqlalchemy import Column,Integer,String
 from .database import Base
 
+
 class Admin(Base):
       __tablename__='external_users'
       username=Column(String(50))
@@ -9,29 +10,10 @@ class Admin(Base):
       usertype=Column(String(50))
       status=Column(String(50))
       phoneno=Column(String(50))
-
-
-class GatHallticket(Base):
-      __tablename__='gat_halltickets'
-      id = Column(Integer)
-      email_id=Column(String(50),primary_key=True,index=True)
-      username=Column(String(50))
-      phoneno=Column(String(50))
-      image_url=Column(String(150))
-      gatAppNo=Column(String(20))
-      center=Column(String(50))
-      examType=Column(String(50))
-      paymentType=Column(String(50))
-      paymentsStatus=Column(String(50))
-      testDate=Column(String(50))
-      testTime=Column(String(50))
-      htStatus=Column(String(50))
-      emailStatus=Column(String(50))
-      htTime=Column(String(50))
-      emailTime=Column(String(50))
-
-
-class Gat_call_letter(Base):
+     
+      
+      
+class Gatcallletter(Base):
       __tablename__='gat_call_letter'
       id=Column(Integer)
       fullname=Column(String(50))
@@ -55,3 +37,28 @@ class Gat_call_letter(Base):
       ctime=Column(String(50))
       gen_status=Column(String(50))
       email_status=Column(String(50))
+      
+      
+class GatHallticket(Base):
+      __tablename__='gat_halltickets'
+      id = Column(Integer)
+      email_id=Column(String(50),primary_key=True,index=True)
+      username=Column(String(50))
+      phoneno=Column(String(50))
+      image_url=Column(String(150))
+      gatAppNo=Column(String(20))
+      center=Column(String(50))
+      examType=Column(String(50))
+      paymentType=Column(String(50))
+      paymentsStatus=Column(String(50))
+      testDate=Column(String(50))
+      testTime=Column(String(50))
+      htStatus=Column(String(50))
+      emailStatus=Column(String(50))
+      htTime=Column(String(50))
+      emailTime=Column(String(50))
+      
+     
+      
+      
+
